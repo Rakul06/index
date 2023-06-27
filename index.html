@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Length Convertor</title>
+</head>
+<body>
+    <div id="total">
+       <h2>Length Convertor</h2>
+       <input type="text" id="input" placeholder="Enter Number in cm">
+
+       <div id="ans">
+       
+        
+
+       </div>
+
+       <button id="button" onclick="convert()">Calculate</button>
+    </div>
+    <script>
+        function convert(){
+            let a=Number(document.getElementById("input").value)
+            let b=a/2.54
+            let ans=document.getElementById("ans")
+            ans.innerHTML=b.toFixed(3) + " - inches"
+        }
+    </script>
+</body>
+</html>
